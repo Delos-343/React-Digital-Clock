@@ -1,0 +1,26 @@
+
+function Tick() {
+  
+  const element = (
+    <div>
+      
+      <div>
+      
+        <h1> Hello, World </h1>
+
+        <h2> It is now {
+            new Date().toLocaleTimeString()
+          }
+        </h2>
+      </div>
+      
+    </div>
+  );
+  
+  ReactDOM.render(
+    element,
+    document.getElementById('root')
+  );
+}
+
+setInterval(Tick, 1000);
